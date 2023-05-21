@@ -1,0 +1,29 @@
+{
+  "name": "dekar-cars-managment-services",
+  "version": "0.0.1",
+  "description": "Dekar ALOG project demenstration car management service",
+  "main": "service.js",
+  "scripts": {
+    "dev": "nodemon node service.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noufel17/Dekar_cars.git"
+  },
+  "keywords": [
+    "microservices",
+    "software",
+    "architecture",
+    "express",
+    "axios"
+  ],
+  "author": "Naili Noufel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noufel17/Dekar_cars/issues"
+  },
+  "homepage": "https://github.com/Noufel17/Dekar_cars#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
