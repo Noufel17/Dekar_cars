@@ -41,6 +41,7 @@ const carSchema = mongoose.Schema({
   state: {
     type: String,
     enum: ["Booked", "Free", "InHub"],
+    default: "Free",
   },
 });
 
