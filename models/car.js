@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const carSchema = mongoose.Schema({
+  picture: {
+    type: String,
+    default:
+      "https://asset.cloudinary.com/dcytqrsut/9527d2bf2481a73fa5dd57d854de98b5",
+  },
   brand: {
     type: String,
     required: [true, "brand name is required"],

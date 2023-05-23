@@ -25,19 +25,6 @@ exports.findNearestCars = async (req, res) => {
 
 async function findCarsWithinRange(longitude, latitude, rangeInKm) {
   const rangeInMeters = rangeInKm * 1000;
-
-  //   const query = {
-  //     location: {
-  //       $nearSphere: {
-  //         $geometry: {
-  //           type: "Point",
-  //           coordinates: [longitude, latitude],
-  //         },
-  //         $maxDistance: rangeInMeters,
-  //         $minDistance: 0,
-  //       },
-  //     },
-  //   };
   const query = {
     location: {
       $nearSphere: {
@@ -48,6 +35,7 @@ async function findCarsWithinRange(longitude, latitude, rangeInKm) {
         $maxDistance: rangeInMeters,
       },
     },
+    state: "Free",
   };
 
   const cars = await Car.find(query);
